@@ -6,14 +6,10 @@ import lombok.Data;
 @Data
 public class Order extends Model<Order> {
 
-<<<<<<< HEAD
-    //订单id
-=======
-    //git merge
->>>>>>> c92e58e ('message')
+    //merge
     private Long userId;
-    //skuId
+    //merge
     private Long skuId;
-    //spuId
+    //merge
     private Long spuId;
 }
