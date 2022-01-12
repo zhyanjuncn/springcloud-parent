@@ -6,12 +6,12 @@ import lombok.Data;
 @Data
 public class User extends Model<User> {
 
-    //用户id
+    //userId
     private Long id;
-    //用户名
+    //昵称
     private String nickname;
-    //用户密码
+    //密码
     private String password;
-    //用户省
+    //省
     private String provinceName;
 }
