@@ -18,8 +18,8 @@ public class Account extends Model<Account> {
     private String username;
     //密码
     private String password;
-    //手机号
+    //手机号 merge
     private String phone;
-    //城市
+    //城市 merge
     private String cityName;
 }

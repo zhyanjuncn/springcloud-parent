@@ -6,7 +6,11 @@ import lombok.Data;
 @Data
 public class Order extends Model<Order> {
 
+<<<<<<< HEAD
     //订单id
+=======
+    //git merge
+>>>>>>> c92e58e ('message')
     private Long userId;
     //skuId
     private Long skuId;
