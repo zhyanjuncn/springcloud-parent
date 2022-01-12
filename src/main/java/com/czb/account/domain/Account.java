@@ -14,8 +14,9 @@ public class Account extends Model<Account> {
 
     //会员id
     private Long accountId;
-    //昵称
+    //用户名
     private String username;
+    //密码
     private String password;
     private String phone;
     private String cityName;
