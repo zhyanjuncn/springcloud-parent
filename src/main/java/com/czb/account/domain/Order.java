@@ -10,6 +10,6 @@ public class Order extends Model<Order> {
     private Long userId;
     //merge
     private Long skuId;
-    //merge
+    //spuId
     private Long spuId;
 }
