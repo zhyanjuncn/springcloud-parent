@@ -6,10 +6,10 @@ import lombok.Data;
 @Data
 public class Order extends Model<Order> {
 
-    //订单id
+    //订单
     private Long orderId;
-    //订单skuid
+    //订单
     private Long skuId;
-    //订单spuid
+    //订单
     private Long spuId;
 }
