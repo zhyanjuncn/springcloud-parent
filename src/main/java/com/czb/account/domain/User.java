@@ -8,6 +8,7 @@ public class User extends Model<User> {
 
     //userId
     private Long id;
+    //nickname
     private String nickname;
     private String password;
     private String provinceName;
