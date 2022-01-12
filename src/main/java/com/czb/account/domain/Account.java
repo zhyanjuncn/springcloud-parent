@@ -14,11 +14,11 @@ public class Account extends Model<Account> {
 
     //会员主键
     private Long accountId;
-    //用户名
+    //用户名id
     private String username;
-    //密码
+    //密码id
     private String password;
-    //phone
+    //phone-id
     private String phone;
     private String cityName;
 }
