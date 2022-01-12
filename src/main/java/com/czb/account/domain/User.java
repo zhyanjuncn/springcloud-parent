@@ -6,17 +6,12 @@ import lombok.Data;
 @Data
 public class User extends Model<User> {
 
-    //user111
+    //user
     private Long id;
-
-    //user111
+    //user
     private String nickname;
-
-
-    //user111
+    //user
     private String password;
-
-
-    //user111
+    //user
     private String provinceName;
 }
