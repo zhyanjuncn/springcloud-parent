@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 public class User extends Model<User> {
 
+    //userId
     private Long id;
     private String nickname;
     private String password;
