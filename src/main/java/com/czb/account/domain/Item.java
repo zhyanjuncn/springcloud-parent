@@ -5,13 +5,13 @@ import lombok.Data;
 
 @Data
 public class Item extends Model<Item> {
-    //id
+    //商品
     private Long id;
-    //品牌
+    //商品
     private String brand;
-    //商品名称
+    //商品
     private String itemName;
-    //分类
+    //商品
     private String category;
 
 }
