@@ -12,7 +12,7 @@ public class Account extends Model<Account> {
 
     private static final long serialVersionUID = -8878506357935780801L;
 
-    //zhujian
+    //会员id
     private Long accountId;
     //用户名
     private String username;
