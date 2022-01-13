@@ -15,21 +15,13 @@ public class Order implements Serializable {
     //订单属性
     //订单id
     private Long id;
-
     private Long userId;
-
     private Long skuId;
-
     private Long spuId;
-
     private BigDecimal totalMoney;
-
     private Integer num;
-
     private BigDecimal price;
-
     private Date createTime;
-
     private Date updateTime;
 
     //计算商品总价格
