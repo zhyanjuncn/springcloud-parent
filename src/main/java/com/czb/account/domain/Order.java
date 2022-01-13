@@ -2,7 +2,6 @@ package com.czb.account.domain;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
