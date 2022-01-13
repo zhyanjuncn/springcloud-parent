@@ -23,6 +23,7 @@ public class Order implements Serializable {
     private BigDecimal price;
     private Date createTime;
     private Date updateTime;
+    private Integer status;
 
     //计算商品总价格
     private BigDecimal getTotal(BigDecimal price,Integer num){
