@@ -15,21 +15,27 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @Builder
+//master
 public class Account implements Serializable {//账户
-
     private static final long serialVersionUID = -8878506357935780801L;
-    //develop
+    //master
     private Long masterId;
-    //develop
+
+    //master
     private String username;
-    //develop
+
+    //master
     private String password;
-    //develop
+
+    //master
     private String phone;
-    //develop
+
+    //master
     private Integer state;
-    //develop
+
+    //master
     private Date createTime;
-    //develop
+
+    //master
     private Date updateTime;
 }
