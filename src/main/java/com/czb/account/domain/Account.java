@@ -5,32 +5,26 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account extends Model<Account> {
-
+public class Account implements Serializable {
     private static final long serialVersionUID = -8878506357935780801L;
-    //master
+    //develop
     private Long masterId;
-
-    //master
+    //develop
     private String username;
-
-    //master
+    //develop
     private String password;
-
-    //master
+    //develop
     private String phone;
-
-    //master
+    //develop
     private Integer state;
-
-    //master
+    //develop
     private Date createTime;
-
-    //master
+    //develop
     private Date updateTime;
 }
