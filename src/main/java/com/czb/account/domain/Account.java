@@ -13,14 +13,10 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-<<<<<<< HEAD
-public class Account implements Serializable {
-=======
 @Accessors(chain = true)
 @Builder
-public class Account extends Model<Account> {//账户
+public class Account implements Serializable {//账户
 
->>>>>>> master
     private static final long serialVersionUID = -8878506357935780801L;
     //develop
     private Long masterId;
