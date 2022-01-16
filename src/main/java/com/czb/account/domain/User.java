@@ -7,11 +7,14 @@ import lombok.Data;
 public class User extends Model<User> {
 
     //user
-    private Long id;
+    private Long userId;
     //user
-    private String nickname;
+    private String username;
     //user
     private String password;
     //user
     private String provinceName;
+    //phone
+    private String phone;
+    //
 }
