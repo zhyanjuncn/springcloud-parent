@@ -2,15 +2,19 @@ package com.czb.account.domain;
 
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account extends Model<Account> {
+@Accessors(chain = true)
+@Builder
+public class Account extends Model<Account> {//账户
 
     private static final long serialVersionUID = -8878506357935780801L;
     //master
