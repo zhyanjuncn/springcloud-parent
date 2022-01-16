@@ -9,14 +9,17 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 @MapperScan("com.czb.account.mapper")
 public class AccountApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(AccountApplication.class,args);
-    }
-    //分支Dev
+
+
+
+
+
+
+    //分支master
     private final static Logger LOGGER = LoggerFactory.getLogger(AccountApplication.class);
     @PostConstruct
     public void printLog(){
-        //分支Dev
+        //分支master
         LOGGER.info("master 当前系统时间为：{}",System.currentTimeMillis());
     }
 }
