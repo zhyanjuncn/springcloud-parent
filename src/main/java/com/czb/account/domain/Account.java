@@ -5,21 +5,32 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Account extends Model<Account> {
 
     private static final long serialVersionUID = -8878506357935780801L;
+    //master
+    private Long masterId;
 
-    //00000
-    private Long accountId;
-    //00000
+    //master
     private String username;
-    //00000
-    private String password;
-    //00000
-    private String phone;
-    //00000
 
+    //master
+    private String password;
+
+    //master
+    private String phone;
+
+    //master
+    private Integer state;
+
+    //master
+    private Date createTime;
+
+    //master
+    private Date updateTime;
 }
