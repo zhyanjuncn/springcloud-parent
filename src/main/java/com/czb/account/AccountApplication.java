@@ -9,14 +9,13 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 @MapperScan("com.czb.account.mapper")
 public class AccountApplication {
-
-
-
-
-
-
     //分支master
     private final static Logger LOGGER = LoggerFactory.getLogger(AccountApplication.class);
+
+    public static void main(String[] args) {
+        SpringApplication.run(AccountApplication.class,args);
+    }
+
     @PostConstruct
     public void printLog(){
         //分支master
