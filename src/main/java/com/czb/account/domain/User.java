@@ -3,15 +3,26 @@ package com.czb.account.domain;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 
-@Data
-public class User extends Model<User> {
+import java.util.Date;
 
-    //user
+@Data
+public class User extends Model<User> {//用户
+
+    //master
     private Long id;
-    //user
+
+    //master
     private String nickname;
-    //user
+
+    //master
     private String password;
-    //user
+
+    //master
     private String provinceName;
+
+    //master
+    private Date addTime;
+
+    //master
+    private Date updateTime;
 }
