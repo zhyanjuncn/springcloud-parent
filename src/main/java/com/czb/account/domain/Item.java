@@ -17,8 +17,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("item")
-public class Item implements Serializable {
-    private static final long serialVersionUID = -5647418285116652440L;//lucy
+public class Item implements Serializable {//lucy
+    private static final long serialVersionUID = -5647418285116652440L;
 
     //id
     @TableId(value = "id",type = IdType.AUTO)
