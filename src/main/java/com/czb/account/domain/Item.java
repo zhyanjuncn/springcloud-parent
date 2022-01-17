@@ -11,7 +11,6 @@ import lombok.experimental.Accessors;
 
 import java.util.Date;
 
-<<<<<<< HEAD
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -35,27 +34,5 @@ public class Item extends Model<Item> {//lucy
     private Date addTime;
     //更新时间
     private Date renewTime;
-=======
-import java.io.Serializable;
-import java.util.Date;
->>>>>>> master
 
-@Data
-public class Item implements Serializable {
-
-    //id
-    private Long itemId;
-    private static final long serialVersionUID = -3047215372788903948L;
-    //品牌
-    private String name;
-    //名称
-    private String brand;
-    //分类
-    private String category;
-    //状态
-    private Integer state;
-    //创建时间
-    private Date createTime;
-    //更新时间
-    private Date updateTime;
 }
