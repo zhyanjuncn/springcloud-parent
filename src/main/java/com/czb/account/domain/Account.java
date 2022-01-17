@@ -18,26 +18,26 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("account")
-public class Account implements Serializable {//账户类
+public class Account implements Serializable {//lucy
     private static final long serialVersionUID = -8878506357935780801L;
 
     //id
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
-    //username
+    //用户名
     private String username;
-    //password
+    //密码
     private String password;
-    //phone
+    //手机号
     private String phone;
-    //city
+    //城市
     private String city;
-    //province
+    //省份
     private String province;
     //状态 0-默认 1-删除
     private Integer state;
-    //createTime
+    //创建时间
     private Date createTime;
-    //updateTime;
+    //更新时间;
     private Date updateTime;
 }

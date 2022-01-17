@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("order")
-public class Order implements Serializable {
+public class Order implements Serializable {//lucy
     private static final long serialVersionUID = -6980009311339814453L;
 
     //订单id

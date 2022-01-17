@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("name")
-public class User implements Serializable {
+public class User implements Serializable {//lucy
     private static final long serialVersionUID = 2668751396019767759L;
 
     //id
