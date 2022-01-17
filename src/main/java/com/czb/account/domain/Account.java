@@ -1,5 +1,8 @@
 package com.czb.account.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,11 +17,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
-@Builder
+@TableName("account")
 public class Account implements Serializable {//账户类
     private static final long serialVersionUID = -8878506357935780801L;
 
     //id
+    @TableId(value = "id",type = IdType.AUTO)
     private Long id;
     //username
     private String username;
