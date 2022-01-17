@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
@@ -16,8 +17,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("item")
-public class Item extends Model<Item> {//lucy
-
+public class Item implements Serializable {//lucy
+    private static final long serialVersionUID = -5647418285116652440L;
 
     //id
     @TableId(value = "id",type = IdType.AUTO)
