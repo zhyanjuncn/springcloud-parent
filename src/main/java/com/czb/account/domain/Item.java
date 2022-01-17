@@ -12,28 +12,31 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * zyj
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("item")
-public class Item implements Serializable {//lucy
-    private static final long serialVersionUID = -5647418285116652440L;
+public class Item implements Serializable {
 
-    //id
+
+    private static final long serialVersionUID = -5647418285116652440L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
     //品牌
-    private String itemBrand;
+    private String brand;
     //名称
-    private String itemName;
+    private String name;
     //分类
-    private String itemCategory;
+    private String categoryId;
     //状态
     private String state;
     //创建时间
-    private Date addTime;
+    private Date createTime;
     //更新时间
-    private Date renewTime;
+    private Date updateTime;
 
 }
