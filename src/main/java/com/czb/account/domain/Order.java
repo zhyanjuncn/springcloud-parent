@@ -15,13 +15,10 @@ import java.util.Date;
  * zyj
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
-@TableName("order")
+@TableName(value = "order",autoResultMap = true)
 public class Order implements Serializable {
-
-
+    ////订单实体类
     private static final long serialVersionUID = -6980009311339814453L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;

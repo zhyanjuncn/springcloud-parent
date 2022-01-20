@@ -10,9 +10,7 @@ import lombok.experimental.Accessors;
  * @param <T>
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
 public class Result<T> {
 
     /**

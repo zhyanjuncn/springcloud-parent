@@ -17,13 +17,10 @@ import java.util.Date;
  * zyj
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
-@TableName("account")
+@TableName(value = "account",autoResultMap = true)
 public class Account implements Serializable {
-
-
+    ////账户实体类
     private static final long serialVersionUID = -8878506357935780801L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;

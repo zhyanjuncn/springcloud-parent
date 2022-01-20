@@ -17,16 +17,35 @@ import java.util.Map;
 @AllArgsConstructor
 @TableName(value = "cart",autoResultMap = true)
 public class Cart implements Serializable {
-    /**
-     * 购物车实体类
-     */
+    ////购物车实体类
     private static final long serialVersionUID = 312548767024950474L;
     @TableId(value = "id",type = IdType.AUTO)
+    /**
+     * id
+     */
     private Long id;
+    /**
+     * userId
+     */
     private Long userId;
+    /**
+     * sku集合
+     */
     private List<Long> skuIds;
+    /**
+     * sku集合与数量
+     */
     private List<Map<Long,Integer>> cartMap;
+    /**
+     * 状态
+     */
     private Integer state;
+    /**
+     * 创建时间
+     */
     private Date createTime;
+    /**
+     * 更新时间
+     */
     private Date updateTime;
 }

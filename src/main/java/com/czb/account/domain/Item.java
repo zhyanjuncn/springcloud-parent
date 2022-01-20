@@ -16,27 +16,36 @@ import java.util.Date;
  * zyj
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
-@TableName("item")
+@TableName(value = "item",autoResultMap = true)
 public class Item implements Serializable {
-
-
+    ////商品实体类
     private static final long serialVersionUID = -5647418285116652440L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
-    //品牌
+    /**
+     * 品牌
+     */
     private String brand;
-    //名称
+    /**
+     * 名称
+     */
     private String name;
-    //分类
+    /**
+     * 分类
+     */
     private String categoryId;
-    //状态
+    /**
+     * 状态
+     */
     private String state;
-    //创建时间
+    /**
+     * 创建时间
+     */
     private Date createTime;
-    //更新时间
+    /**
+     * 更新时间
+     */
     private Date updateTime;
 
 }
