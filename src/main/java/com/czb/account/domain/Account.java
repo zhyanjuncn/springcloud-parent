@@ -13,15 +13,18 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * zyj
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("account")
-public class Account implements Serializable {//lucy
-    private static final long serialVersionUID = -8878506357935780801L;
+public class Account implements Serializable {
 
-    //id
+
+    private static final long serialVersionUID = -8878506357935780801L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
     //用户名

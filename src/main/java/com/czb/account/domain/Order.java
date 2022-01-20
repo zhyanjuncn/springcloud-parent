@@ -11,28 +11,63 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * zyj
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true)
 @TableName("order")
-public class Order implements Serializable {//lucy
-    private static final long serialVersionUID = -6980009311339814453L;
+public class Order implements Serializable {
 
-    //订单id
+
+    private static final long serialVersionUID = -6980009311339814453L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
+    /**
+     * 用户id
+     */
     private Long userId;
+    /**
+     * skuId
+     */
     private Long skuId;
+    /**
+     * spuId
+     */
     private Long spuId;
+    /**
+     * 总金额
+     */
     private BigDecimal totalMoney;
+    /**
+     * 数量
+     */
     private Integer num;
+    /**
+     * 单价
+     */
     private BigDecimal price;
-    private Date createTime;
-    private Date updateTime;
+    /**
+     * 订单状态
+     */
     private Integer status;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 
-    //计算商品总价格
+    /**
+     * 计算订单总金额
+     * @param price
+     * @param num
+     * @return
+     */
     private BigDecimal getTotal(BigDecimal price,Integer num){
         return new BigDecimal(price.intValue()*num);
     }
