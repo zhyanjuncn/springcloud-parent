@@ -21,21 +21,21 @@ import java.util.Date;
 public class ItemSpu implements Serializable {//张三
     private static final long serialVersionUID = 6996376042145129388L;
 
-    //id
-    @TableId(value = "id",type = IdType.AUTO)
-    private Long id;
+    //spuAndId
+    @TableId(value = "spu_and_id",type = IdType.AUTO)
+    private Long spuAndId;
     //spu名称
     private String name;
     //父id
     private String pid;
     //类型
-    private String type;
+    private Integer type;
     //状态
-    private Integer state;
+    private String state;
     //商品id
     private Long itemId;
     //创建时间
-    private Date createTime;
+    private Long createTime;
     //更新时间
-    private Date updateTime;
+    private Long updateTime;
 }
