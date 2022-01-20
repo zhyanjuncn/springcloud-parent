@@ -23,9 +23,9 @@ public class Cart implements Serializable {
     private static final long serialVersionUID = 312548767024950474L;
     @TableId(value = "id",type = IdType.AUTO)
     private Long id;
+    private Long userId;
     private List<Long> skuIds;
     private List<Map<Long,Integer>> cartMap;
-    private Long userId;
     private Integer state;
     private Date createTime;
     private Date updateTime;
