@@ -16,23 +16,22 @@ import java.util.Date;
  * zyj
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Accessors(chain = true)
-@TableName(value = "item_spu",autoResultMap = true)
-public class TbSpu implements Serializable {
-
-
+@TableName(value = "spu",autoResultMap = true)
+public class Spu implements Serializable {
+    /**
+     * 商品spu表
+     */
     private static final long serialVersionUID = 6996376042145129388L;
     /**
      * spu id
      */
-    @TableId(value = "id",type = IdType.AUTO)
-    private Long id;
+    @TableId(value = "spu_id",type = IdType.AUTO)
+    private Long spuId;
     /**
      * 商品名称
      */
-    private String name;
+    private String spuName;
     /**
      * 副标题，一般是促销信息
      */
@@ -50,7 +49,11 @@ public class TbSpu implements Serializable {
      */
     private String cid3;
     /**
-     *  商品所属品牌id
+     * 商品所属分类id
+     */
+    private Long categoryId;
+    /**
+     * 商品所属品牌id
      */
     private Long brandId;
     /**
@@ -60,7 +63,7 @@ public class TbSpu implements Serializable {
     /**
      * 状态值
      */
-    private Integer state;
+    private String state;
     /**
      * 创建时间
      */
@@ -69,4 +72,5 @@ public class TbSpu implements Serializable {
      * 更新时间
      */
     private Date updateTime;
+
 }
