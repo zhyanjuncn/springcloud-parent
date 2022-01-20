@@ -13,12 +13,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Accessors(chain = true)
-@Builder
 @TableName(value = "item_spu",autoResultMap = true)
-public class ItemSpu implements Serializable {//张三
+public class Spu implements Serializable {//张三
     private static final long serialVersionUID = 6996376042145129388L;
 
     //spuAndId
