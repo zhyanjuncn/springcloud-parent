@@ -12,4 +12,5 @@ public interface AccountService {
     void deleteById(Long id);
 
     void update(Long id);
+
 }
