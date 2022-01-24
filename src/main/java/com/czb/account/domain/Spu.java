@@ -14,14 +14,14 @@ import java.util.Date;
  */
 @Data
 @AllArgsConstructor
-@TableName(value = "spu",autoResultMap = true)
+//@TableName(value = "spu",autoResultMap = true)
 public class Spu implements Serializable {
     ////spu实体类
     private static final long serialVersionUID = 6996376042145129388L;
     /**
      * spu id
      */
-    @TableId(value = "id",type = IdType.AUTO)
+    //@TableId(value = "id",type = IdType.AUTO)
     private Long id;
     /**
      * 商品名称

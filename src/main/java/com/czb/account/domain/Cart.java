@@ -15,14 +15,14 @@ import java.util.Map;
  */
 @Data
 @AllArgsConstructor
-@TableName(value = "cart",autoResultMap = true)
+//@TableName(value = "cart",autoResultMap = true)
 public class Cart implements Serializable {
     ////购物车实体类
     private static final long serialVersionUID = 312548767024950474L;
-    @TableId(value = "id",type = IdType.AUTO)
     /**
      * id
      */
+    //@TableId(value = "id",type = IdType.AUTO)
     private Long id;
     /**
      * userId

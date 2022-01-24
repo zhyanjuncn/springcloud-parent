@@ -16,11 +16,11 @@ import java.util.Date;
  */
 @Data
 @AllArgsConstructor
-@TableName(value = "order",autoResultMap = true)
+//@TableName(value = "order",autoResultMap = true)
 public class Order implements Serializable {
     ////订单实体类
     private static final long serialVersionUID = -6980009311339814453L;
-    @TableId(value = "id",type = IdType.AUTO)
+    //@TableId(value = "id",type = IdType.AUTO)
     private Long id;
     /**
      * 用户id
