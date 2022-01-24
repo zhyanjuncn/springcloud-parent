@@ -16,7 +16,7 @@ public class AccountApplication {
     }
 
     @PostConstruct
-    public void printLog(){
+    public void makeLog(){
         LOGGER.info("master 当前系统时间为：{}",System.currentTimeMillis());
     }
 }

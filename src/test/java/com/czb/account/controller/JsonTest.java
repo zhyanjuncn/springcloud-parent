@@ -1,4 +1,4 @@
-package com.czb.account.test;
+package com.czb.account.controller;
 
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;
