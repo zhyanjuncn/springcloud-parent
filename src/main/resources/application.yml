@@ -5,9 +5,10 @@ server:
     max-threads:
 spring:
   application:
-    name: account-service  datasource:
-    url: jdbc:mysql://localhost:3306/account
-    username: root
-    data-password: root
-    driver-class-name: com.mysql.jdbc.Driver
+    name: account-service
+    datasource:
+      url: jdbc:mysql://localhost:3306/account
+      username: root
+      data-password: root
+      driver-class-name: com.mysql.jdbc.Driver
 
